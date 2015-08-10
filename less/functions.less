@@ -25,3 +25,23 @@
     }
     .float-cols(1) // start it off
 }
+
+// Generate column widths
+// param query is device name, ie mobile tablet desktop
+.generate-columns(@query) {
+    .build(@query) {
+        @column: ~".@{query}-@{column-index}";
+        @{column} {
+            width: 100%;
+        }
+        .build(@query, (@column-index - 1))
+    }
+    .build(@query, @index) when (@index >= 1) {
+        @column: ~".@{query}-@{index}";
+        @{column} {
+            width: ((100%/@column-index) * (@index));
+        }
+        .build(@query, (@index - 1));
+    }
+    .build(@query);
+}
