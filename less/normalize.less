@@ -3,10 +3,24 @@
 
 //  * 1. Prevent iOS text size adjust after orientation change, without disabling user zoom.
 //  * 2. Set font-size to 62.5% to equate 1rem to 10px
+//  * 3. Set box sizing border-box for all elements
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  font-size: 62.5%
+  font-size: 62.5%;
+
+  // Prefixes are almost dead, but we still use them here
+  // I'll include polyfill later
+  -webkit-box-sizing: border-box;
+	 -moz-box-sizing: border-box;
+	      box-sizing: border-box;
+}
+
+//  * Set all elements to border-box
+*, *:before, *:after {
+	-webkit-box-sizing: inherit;
+	   -moz-box-sizing: inherit;
+	        box-sizing: inherit;
 }
 
 //  * 1. Remove default margin.
@@ -123,8 +137,6 @@ figure { margin: 1em 40px; }
 
 //  * Address differences between Firefox and other browsers.
 hr {
-	-moz-box-sizing: content-box;
-	box-sizing: content-box;
 	height: 0;
 }
 
@@ -209,7 +221,6 @@ input {
 	// * 2. Remove excess padding in IE 8/9/10.
 	&[type="checkbox"],
 	&[type="radio"] {
-		box-sizing: border-box;
 		padding: 0;
 	}
 
