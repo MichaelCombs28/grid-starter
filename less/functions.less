@@ -1,0 +1,27 @@
+//  * 1. float all columns left
+//  * 2. min height so they don't collapse if empty
+//  * 3. Set left and right padding to 1/2 gutter size
+
+.style-cols() {
+    .float-cols(@index) {
+        @list: ~".mobile-@{index}, .tablet-@{index}, .desktop-@{index}, .widescreen-@{index}";
+        .float-cols((@index + 1), @list)
+    }
+
+    // guarded function to stop after column index is expended
+    .float-cols(@index, @elements) when (@index =< @column-index) {
+        @list: ~".mobile-@{index}, .tablet-@{index}, .desktop-@{index}, .widescreen-@{index}";
+        // recursive function call, add lists together
+        .float-cols((@index + 1), ~"@{elements}, @{list}");
+    }
+
+    .float-cols(@index, @elements) when (@index > @column-index) {
+        @{elements} {
+            position: relative;
+            min-height: 1px;
+            padding-left: (@gutter / 2);
+            padding-right: (@gutter / 2);
+        }
+    }
+    .float-cols(1) // start it off
+}
