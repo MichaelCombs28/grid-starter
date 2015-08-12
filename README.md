@@ -28,4 +28,6 @@ Spend more time styling your site than working on column widths.
 All parts are free to use under the open-source MIT license.
 
 ## Customization
+A simple variables file in less to edit total column numbers, gutter sizes, and media queries for mobile, tablet, desktop, and widescreen devices.
+
 A SASS version will be added very soon as well as an SCSS version
