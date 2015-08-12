@@ -31,16 +31,21 @@
 .generate-columns(@query) {
     .build(@query) {
         @column: ~".@{query}-@{column-index}";
-        @{column} {
-            width: 100%;
-        }
+        @offset: ~".offset-@{query}-@{column-index}";
+        @push: ~".push-@{query}-@{column-index}";
+        @{column} { width: 100% }
+        @{offset} { margin-left: 100% }
+        @{push} { margin-right: 100% }
         .build(@query, (@column-index - 1))
     }
     .build(@query, @index) when (@index >= 1) {
         @column: ~".@{query}-@{index}";
-        @{column} {
-            width: ((100%/@column-index) * (@index));
-        }
+        @offset: ~".offset-@{query}-@{column-index}";
+        @push: ~".push-@{query}-@{column-index}";
+        @build-size: ((100%/@column-index) * (@index));
+        @{column} { width: @build-size; }
+        @{offset} { margin-left: @build-size }
+        @{push} { margin-right: @build-size }
         .build(@query, (@index - 1));
     }
     .build(@query);
