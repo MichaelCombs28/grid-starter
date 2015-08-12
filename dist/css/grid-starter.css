@@ -23,12 +23,15 @@
   content: " ";
   clear: both;
 }
-.mobile-1, .tablet-1, .desktop-1, .widescreen-1, .mobile-2, .tablet-2, .desktop-2, .widescreen-2, .mobile-3, .tablet-3, .desktop-3, .widescreen-3, .mobile-4, .tablet-4, .desktop-4, .widescreen-4, .mobile-5, .tablet-5, .desktop-5, .widescreen-5, .mobile-6, .tablet-6, .desktop-6, .widescreen-6, .mobile-7, .tablet-7, .desktop-7, .widescreen-7, .mobile-8, .tablet-8, .desktop-8, .widescreen-8, .mobile-9, .tablet-9, .desktop-9, .widescreen-9, .mobile-10, .tablet-10, .desktop-10, .widescreen-10, .mobile-11, .tablet-11, .desktop-11, .widescreen-11, .mobile-12, .tablet-12, .desktop-12, .widescreen-12 {
+.mobile-1, .tablet-1, .desktop-1, .widescreen-1, .mobile-2, .tablet-2, .desktop-2, .widescreen-2, .mobile-3, .tablet-3, .desktop-3, .widescreen-3, .mobile-4, .tablet-4, .desktop-4, .widescreen-4, .mobile-5, .tablet-5, .desktop-5, .widescreen-5, .mobile-6, .tablet-6, .desktop-6, .widescreen-6, .mobile-7, .tablet-7, .desktop-7, .widescreen-7, .mobile-8, .tablet-8, .desktop-8, .widescreen-8, .mobile-9, .tablet-9, .desktop-9, .widescreen-9, .mobile-10, .tablet-10, .desktop-10, .widescreen-10, .mobile-11, .tablet-11, .desktop-11, .widescreen-11, .mobile-12, .tablet-12, .desktop-12, .widescreen-12,
+.grid,
+.row {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
   float: left;
+  box-sizing: border-box;
 }
 .offset-mobile-0 {
   margin-left: 0;
