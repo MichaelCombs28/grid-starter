@@ -15,8 +15,8 @@
   clear: both;
 }
 .row {
-  padding-right: -15px;
-  padding-left: -15px;
+  margin-right: -15px;
+  margin-left: -15px;
 }
 .row:after {
   display: table;
