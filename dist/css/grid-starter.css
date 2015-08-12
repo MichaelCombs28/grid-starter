@@ -30,6 +30,12 @@
   padding-right: 15px;
   float: left;
 }
+.offset-mobile-0 {
+  margin-left: 0;
+}
+.push-mobile-0 {
+  margin-right: 0;
+}
 .mobile-12 {
   width: 100%;
 }
@@ -139,6 +145,12 @@
   margin-right: 8.33333333%;
 }
 @media (min-width: 768px) {
+  .offset-tablet-0 {
+    margin-left: 0;
+  }
+  .push-tablet-0 {
+    margin-right: 0;
+  }
   .tablet-12 {
     width: 100%;
   }
@@ -249,6 +261,12 @@
   }
 }
 @media (min-width: 992px) {
+  .offset-desktop-0 {
+    margin-left: 0;
+  }
+  .push-desktop-0 {
+    margin-right: 0;
+  }
   .desktop-12 {
     width: 100%;
   }
@@ -359,6 +377,12 @@
   }
 }
 @media (min-width: 1200px) {
+  .offset-widescreen-0 {
+    margin-left: 0;
+  }
+  .push-widescreen-0 {
+    margin-right: 0;
+  }
   .widescreen-12 {
     width: 100%;
   }
