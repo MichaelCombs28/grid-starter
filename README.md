@@ -21,7 +21,7 @@ Grid starter is a minimalist way to start a project.
 
 Grid-starter is a minimalist way to add a grid system to your project. It's a great way to start any project from scratch!
 
-Normalize is already built in and in total, unminified, it's under 600 lines.
+Normalize is already built in and in total, unminified, it's under 660 lines.
 Spend more time styling your site than working on column widths.
 
 ## License
