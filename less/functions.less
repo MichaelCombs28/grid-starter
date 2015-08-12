@@ -34,6 +34,11 @@
         @column: ~".@{query}-@{column-index}";
         @offset: ~".offset-@{query}-@{column-index}";
         @push: ~".push-@{query}-@{column-index}";
+        // Initial 0 push columns
+        @offset-zero: ~".offset-@{query}-0";
+        @push-zero: ~".push-@{query}-0";
+        @{offset-zero} { margin-left: 0 }
+        @{push-zero} { margin-right: 0 }
         @{column} { width: 100% }
         @{offset} { margin-left: 100% }
         @{push} { margin-right: 100% }
