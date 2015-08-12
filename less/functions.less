@@ -46,8 +46,8 @@
     }
     .build(@query, @index) when (@index >= 1) {
         @column: ~".@{query}-@{index}";
-        @offset: ~".offset-@{query}-@{column-index}";
-        @push: ~".push-@{query}-@{column-index}";
+        @offset: ~".offset-@{query}-@{index}";
+        @push: ~".push-@{query}-@{index}";
         @build-size: ((100%/@column-index) * (@index));
         @{column} { width: @build-size; }
         @{offset} { margin-left: @build-size }
