@@ -16,12 +16,13 @@
     }
 
     .float-cols(@index, @elements) when (@index > @column-index) {
-        @{elements} {
+        @{elements}, .grid, .row {
             position: relative;
             min-height: 1px;
             padding-left: (@gutter / 2);
             padding-right: (@gutter / 2);
             float: left;
+            box-sizing: border-box;
         }
     }
     .float-cols(1) // start it off
