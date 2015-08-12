@@ -28,6 +28,7 @@
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  float: left;
 }
 .mobile-12 {
   width: 100%;
