@@ -1,0 +1,31 @@
+{
+  "name": "grid-starter",
+  "version": "0.9.0",
+  "homepage": "https://github.com/MichaelCombs28/grid-starter",
+  "description": "A simple pluggable CSS grid",
+  "main": "dist/grid-starter.css",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "css",
+    "js",
+    "less",
+    "mobile-first",
+    "responsive",
+    "front-end",
+    "plugin",
+    "web"
+  ],
+  "authors": [
+    "Michael Combs"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
