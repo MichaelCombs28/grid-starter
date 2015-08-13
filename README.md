@@ -9,7 +9,10 @@ Check out <http://combs.ninja/grid-starter> for documentation.
 
 -[Download the zip](https://github.com/MichaelCombs28/grid-starter/archive/master.zip)
 
--Bower support coming soon!
+-Bower:
+```
+bower install grid-starter
+```
 
 
 ## What's included
