@@ -2,7 +2,7 @@
 Grid-starter is a minimalist way to add a grid system to your project.
 Grid-starter includes 4 customizable media querys.
 
-Check out <http://combs.ninja/grid-starter> for documentation.
+Documentation is moving to readthedocs. Coming Soon.
 
 
 ## Getting started
